@@ -1,0 +1,39 @@
+# Node.js dependencies
+/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+/dist/
+/build/
+/public/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# IDE/Editor folders and files
+.vscode/
+.idea/
+
+# Optional npm cache directory
+.npm/
+
+# MacOS
+*.swp
+
+# Windows Installer files
+*.cab
+*.msi
+*.exe
+
+# Debug files
+*.log
+*.bak
+*.swp
