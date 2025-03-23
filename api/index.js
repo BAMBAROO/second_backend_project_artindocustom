@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import express from "express";
 import { connectDB } from "./config/db.js";
 import router from "./routes/router.js";
+import path from "path";
 
 dotenv.config();
 
@@ -23,6 +24,11 @@ app.use((req, res, next) => {
     return res.sendStatus(200);
   }
   next();
+});
+
+app.get("/robots.txt", (req, res) => {
+  res.type("text/plain");
+  res.send(`User-agent: *\nDisallow: /`);
 });
 
 app.use(express.urlencoded({ extended: true }));
